@@ -1,0 +1,65 @@
+.not-found-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: var(--space-6);
+}
+
+.not-found-container {
+  max-width: 500px;
+  text-align: center;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--glass-border);
+  padding: var(--space-8);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.error-code {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--primary-light);
+  line-height: 1;
+  margin-bottom: var(--space-4);
+  opacity: 0.5;
+}
+
+.error-icon {
+  font-size: 4rem;
+  color: var(--accent-light);
+  margin-bottom: var(--space-4);
+}
+
+.not-found-page h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin: 0 0 var(--space-4);
+}
+
+.not-found-page p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+  font-size: 1.1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .error-code {
+    font-size: 4rem;
+  }
+  
+  .error-icon {
+    font-size: 3rem;
+  }
+  
+  .not-found-page h1 {
+    font-size: 1.5rem;
+  }
+} 
